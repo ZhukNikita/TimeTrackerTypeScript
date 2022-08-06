@@ -14,17 +14,17 @@ const App: React.FC = () => {
         localStorage.setItem('key', JSON.stringify(tracks))
     }, [tracks])
 
-    return(
-      <div className='App'>
-          <div className="TimeTracker">
-              <h1>Tracker</h1>
-              <AddTrack
-                  items={tracks}
-                  setNewTracks={setNewTracks}
-              />
-          </div>
-          <TrackerList items={tracks} setNewTracks={setNewTracks}/>
-      </div>
-  )
+    return (
+        <div className='App'>
+            <div className="TimeTracker">
+                <h1>Tracker</h1>
+                <AddTrack
+                    items={tracks}
+                    setNewTracks={setNewTracks}
+                />
+            </div>
+            <TrackerList items={tracks} setNewTracks={setNewTracks}/>
+        </div>
+    )
 }
 export default App;

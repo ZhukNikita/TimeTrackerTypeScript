@@ -4,12 +4,15 @@ import {iTracker} from "../types/data";
 interface Message {
     id: number;
     items: iTracker[]
-    messageClear: () => void;
     setNewTracks: Dispatch<SetStateAction<iTracker[]>>
+    setMessage : (message: string | JSX.Element) =>void
 }
 
 const RemoveMessage: React.FC<Message> = (props) => {
-    const {id, messageClear, items, setNewTracks} = props;
+    const {id, items, setNewTracks , setMessage} = props;
+    function messageClear(){
+        setMessage('')
+    }
     const removeTodo = (id: number): void => {
         setNewTracks(items.filter(tracker => tracker.id !== id))
     }

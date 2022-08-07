@@ -10,7 +10,7 @@ const AddTrack: React.FC<AddTrackInt> = ({items, setNewTracks}) => {
     var date = new Date()
     var month = date.getMonth() + 1
     var defaultTrackName = `${date.getDate()}/${month.toString().padStart(2, '0')}/${date.getFullYear()}`
-    const [trackName, setTrackName] = useState('')
+    const [trackName, setTrackName] = useState(defaultTrackName)
     const [timeOn, setTimeOn] = useState(true)
     const [time, setTime] = useState(0)
 

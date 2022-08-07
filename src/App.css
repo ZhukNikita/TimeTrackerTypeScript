@@ -1,123 +1,123 @@
 * {
-  margin: 0;
-  padding: 0;
-  font-family: 'Inconsolata', monospace;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
 }
 
 .App {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  min-height: 500px;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 500px;
+    width: 100%;
 }
 
 .TimeTracker {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .TimeTracker h1 {
-  text-align: center;
+    text-align: center;
 }
 
 .tracker {
-  margin-top: 20px;
-  padding: 20px;
-  font-size: 20px;
-  width: 40vw;
-  display: flex;
-  justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 20px;
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
 }
 
 .trackerButtons {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 button {
-  border: 0;
-  background-color: white;
+    border: 0;
+    background-color: white;
 }
 
 .delete {
-  color: red;
+    color: red;
 }
 
 .AddTrack button {
-  color: green;
+    color: green;
 }
 
 input {
-  border: 0;
-  background-color: white;
-  outline: none;
-  width: 100%;
-  font-weight: 1000;
+    border: 0;
+    background-color: white;
+    outline: none;
+    width: 100%;
+    font-weight: 1000;
 }
 
 .AddTrack {
-  margin-top: 40px;
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid;
-  border-radius: 20px;
-  width: 350px;
+    margin-top: 40px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    border-radius: 20px;
+    width: 350px;
 }
 
 .trackList {
-  margin-top: 40px;
+    margin-top: 40px;
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
 
 .message-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.1);
-  z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
 .message-wrapper h1 {
-  font-size: 15px;
+    font-size: 15px;
 
 }
 
 .message {
-  padding-top: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 20px;
-  background-color: #ffffff;
-  width: 300px;
-  font-weight: normal;
-  border-radius: 16px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    width: 300px;
+    font-weight: normal;
+    border-radius: 16px;
 }
 
 .message button {
-  margin-right: 15px;
-  margin-top: 15px;
-  height: 30px;
-  width: 50px;
-  font-weight: 1000;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+    margin-right: 15px;
+    margin-top: 15px;
+    height: 30px;
+    width: 50px;
+    font-weight: 1000;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 500px) {
-  .tracker {
-    width: 70vw;
-    font-size: 100%;
-  }
+    .tracker {
+        width: 70vw;
+        font-size: 100%;
+    }
 
 }
